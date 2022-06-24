@@ -64,6 +64,21 @@
 
 // function reverseString (str){
 //    let revString = '';
-//    for(let char of str)
+//    for(let char of str){
+//     revString = char + revString;
+//    }
+//    return revString;
+//    }
 // const output = reverseString("Hello");
 // console.log(output);
+
+// function reverseString(str){
+//     let revString = '';
+//     str.split('').forEach(function(char){
+//         revString = char + revString;
+//     });
+//     return revString;
+// }
+// const output = reverseString("Hello");
+// console.log(output);
+
