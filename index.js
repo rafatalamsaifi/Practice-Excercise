@@ -82,3 +82,16 @@
 // const output = reverseString("Hello");
 // console.log(output);
 
+// function is(str){
+//     const revString = str.split('').reverse().join('');
+//     return revString === str;
+// }
+// const output = is("racecar");
+// console.log(output)
+
+function reverseInt(int){
+    const revString = int.toString().split('').reverse().join('');
+    return parseInt(revString)*Math.sign(int);
+}
+const output = reverseInt(-12345);
+console.log(output);
