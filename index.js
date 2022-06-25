@@ -22,6 +22,7 @@
 // function reverseString(str){
 //     const strArr = str.split('');
 //     strArr.reverse();
+//     console.log(strArr);
 //     return strArr.join('');
 // }
 //  const output = reverseString("Hello");
@@ -89,9 +90,29 @@
 // const output = is("racecar");
 // console.log(output)
 
-function reverseInt(int){
-    const revString = int.toString().split('').reverse().join('');
-    return parseInt(revString)*Math.sign(int);
+// function reverseInt(int){
+//     const revString = int.toString().split('').reverse().join('');
+//     return parseInt(revString)*Math.sign(int);
+// }
+// const output = reverseInt(-12345);
+// console.log(output);
+
+
+// function string(str){
+//     let string = str.split('');
+//     console.log(string);
+// } 
+// let output = string("Rafat");
+// console.log(output);
+
+function capitalizeLetters(str){
+    const strArr = str.toLowerCase().split(' ');
+
+    for(let i=0; i<strArr.length; i++){
+        strArr[i] = strArr[i].substring(0,1).toUpperCase()+strArr[i].substring(1);
+    }
+    return strArr.join(' ');
+    
 }
-const output = reverseInt(-12345);
+const output = capitalizeLetters('i love javascript');
 console.log(output);
