@@ -320,8 +320,10 @@ const numbers = [10, 15, 17, 25, 28];
 // document.getElementById('root').innerHTML = output;
 
 // function isPalindrome(str){
-//     let newStr = str.split('').reverse().join('');
-//     return newStr === str;
+//     let newStr = str.split('')
+//             newStr.reverse()
+//             return newStr.join('') === str;
+     
 // }
 
 // const output = isPalindrome("racecar");
@@ -366,13 +368,77 @@ const numbers = [10, 15, 17, 25, 28];
 // const output = capitalizeLetters('i LOve javascript');
 // document.getElementById('root').innerHTML = output
 
-function capitalizeLetters(str){
-    const strArr = str.toLowerCase().split(' ');
-    for(let i = 0; i<str.length; i++){
-        strArr[i] = strArr[i].substring(0,1).toUpperCase() + strArr[i].substring(1);
+// function capitalizeLetters(str){
+//     const strArr = str.toLowerCase().split(' ');
+//     for(let i = 0; i<str.length; i++){
+//         strArr[i] = strArr[i].substring(0,1).toUpperCase() + strArr[i].substring(1);
 
-    }return strArr.join(' ');
-}
+//     }return strArr.join(' ');
+// }
 
-const output = capitalizeLetters('i love javascript')
-document.getElementById('root').innerHTML = output;
+// const output = capitalizeLetters('i love javascript')
+// document.getElementById('root').innerHTML = output;
+
+
+// function myDisplayer(some){
+//     document.getElementById('root').innerHTML = some
+// }
+
+// const myPromise = new Promise(function(resolve){
+//     resolve("I love my india")
+// })
+
+// myPromise.then(
+//     function(value){ myDisplayer(value)}
+// );
+
+// async function myDisplay(){
+//     const newPromise = new Promise(function(resolve){
+//         resolve("Hello world")
+//     })
+//     document.getElementById('root').innerHTML = await newPromise
+// }
+
+// myDisplay()
+
+// async function myDisplayer(){
+//     const myPromise = new Promise(function(resolve){
+//         setTimeout(function(){resolve('This is my India')}, 3000)
+//     });
+//     document.getElementById('root').innerHTML = await myPromise
+// }
+
+// myDisplayer();
+
+// try{
+//     addlert("are you ready")
+//     document.getElementById('root').innerHTML = "you have chosen---OK"
+
+// }catch(error){
+//     document.getElementById('root').innerHTML = error
+//     console.log(error)
+
+// }
+
+// template literals
+
+// let myTemp = "Rafat Alam Saifi"
+// let finalTemp = `My name is \n ${myTemp}`
+// document.getElementById("root").innerHTML = finalTemp
+// console.log(finalTemp);
+
+// let engineer = {
+//     "ci vil": "Qasim",
+//     software: "Suhail Akhtar",
+//     mechanical: "Mehroz"
+// }
+// document.getElementById("root").innerHTML = engineer['ci vil']
+// console.log(engineer.mechanical)
+
+// let arr = [2, 45, 5, 6];
+
+// let newArr = arr.map(function(num){
+//     return num * num
+// })
+
+// document.getElementById('root').innerHTML = newArr
